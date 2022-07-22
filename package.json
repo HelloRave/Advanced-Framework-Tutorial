@@ -1,0 +1,32 @@
+{
+  "name": "advanced-framework-tutorial",
+  "version": "1.0.0",
+  "description": "To start mysql, in the terminal, type in `mysql -u root`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloRave/Advanced-Framework-Tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelloRave/Advanced-Framework-Tutorial/issues"
+  },
+  "homepage": "https://github.com/HelloRave/Advanced-Framework-Tutorial#readme",
+  "dependencies": {
+    "bookshelf": "^1.2.0",
+    "db-migrate": "^0.11.13",
+    "db-migrate-mysql": "^2.2.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "forms": "^1.3.2",
+    "handlebars-helpers": "^0.10.0",
+    "hbs": "^4.2.0",
+    "knex": "^2.2.0",
+    "mysql": "^2.18.1",
+    "wax-on": "^1.2.2"
+  }
+}
