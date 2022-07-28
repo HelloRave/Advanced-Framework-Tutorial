@@ -6,6 +6,8 @@
             <th>Name</th>
             <th>Description</th>
             <th>Cost</th>
+            <th>Categories</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +16,7 @@
             <td>{{this.name}}</td>
             <td>{{this.description}}</td>
             <td>{{this.cost}}</td>
+            <td>{{this.category.name}}</td>
             <td>
                 <a href="/products/{{this.id}}/update">Update</a>
                 <a href="/products/{{this.id}}/delete">Delete</a>
