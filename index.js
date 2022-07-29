@@ -8,6 +8,7 @@ require('dotenv').config()
 
 const landingRoutes = require('./routes/landing')
 const productRoutes = require('./routes/products')
+const userRoutes = require('./routes/users')
 
 let app = express()
 
@@ -38,8 +39,8 @@ app.use(function(req,res,next){
 })
 
 app.use('/',landingRoutes)
-
 app.use('/products', productRoutes)
+app.use('/users', userRoutes)
 
 app.listen(3000, () => {
     console.log('Server started')
