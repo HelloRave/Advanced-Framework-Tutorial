@@ -4,6 +4,7 @@ const wax = require('wax-on')
 const session = require('express-session')
 const flash = require('connect-flash')
 const FileStore = require('session-file-store')(session)
+const csrf = require('csurf')
 require('dotenv').config()
 
 const landingRoutes = require('./routes/landing')
@@ -35,6 +36,13 @@ app.use(flash())
 app.use(function(req,res,next){
     res.locals.success_messages = req.flash('success_messages')
     res.locals.error_messages = req.flash('error_messages')
+    next()
+})
+
+app.use(csrf())
+
+app.use(function(req,res,next){
+    res.locals.csrfToken = req.csrfToken()
     next()
 })
 
